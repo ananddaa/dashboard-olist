@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from streamlit import config as _cfg
 
-# paksa tema terang walau OS/browser dark mode (cadangan jika config.toml tidak terbaca)
+# tema terang walau OS/browser dark mode 
 for _k, _v in {"theme.base": "light", "theme.backgroundColor": "#F3F4F6",
                "theme.secondaryBackgroundColor": "#FFFFFF", "theme.textColor": "#111111",
                "theme.primaryColor": "#111111"}.items():
@@ -299,7 +299,7 @@ with tab4:
             fig = hbar(seg, name, "segment", colors, name, "%{x:.1f}%",
                        customdata=seg[["customers", "revenue", "avg_recency"]].to_numpy(),
                        hover="<b>%{y}</b><br>" + name + ": %{x:.1f}%<br>Pelanggan: %{customdata[0]:,}<br>Revenue: R$ %{customdata[1]:,.0f}<br>Rata-rata recency: %{customdata[2]:.0f} hari<extra></extra>",
-                       height=340)
+                       height=340, x_pad=1.16)
             card_chart(col, fig)
 
         show_table(

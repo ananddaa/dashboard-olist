@@ -54,7 +54,7 @@ h3 { font-size: 1.1rem !important; font-weight: 600; padding-top: 0.4rem; color:
 .st-key-kpi [data-testid="stColumn"]:nth-child(1) [data-testid="stMetricValue"] * { color: #fff !important; }
 .brand-logo { color: #fff !important; }
 
-/* ===== Perbaikan lanjutan dark mode ===== */
+/* perbaikan lanjutan dark mode */
 /* kotak info/peringatan: paksa terang */
 [data-testid="stAlert"], [data-testid="stAlert"] > div, [data-testid="stAlertContainer"] {
     background: #EAF1FB !important; color: #1F3A5F !important; border-radius: 12px; }
@@ -72,7 +72,7 @@ h3 { font-size: 1.1rem !important; font-weight: 600; padding-top: 0.4rem; color:
 /* tooltip tabel & toolbar header */
 [data-testid="stToolbar"] * { color: #111; }
 
-/* ===== Dropdown, expander, tabel: paksa terang di dark mode ===== */
+/* dropdown, expander, tabel: paksa terang di dark mode */
 [data-testid="stSidebar"] [data-baseweb="select"] *,
 [data-testid="stSidebar"] [data-baseweb="select"] > div {
     background-color: #FFFFFF !important; color: #111 !important; }
@@ -99,3 +99,7 @@ html body [data-testid="stSidebar"] [data-testid="stMultiSelect"] div[data-basew
     background: #FFFFFF !important; background-color: #FFFFFF !important; color: #111 !important; }
 html body [data-testid="stSidebar"] [data-baseweb="select"] > div { border: 1px solid #DADCE3 !important; }
 html body [data-testid="stSidebar"] [data-baseweb="select"] input { color: #111 !important; -webkit-text-fill-color: #111; }
+
+/* jarak tabel dengan elemen di bawahnya */
+.tbl-wrap { margin: 4px 0 20px 0; }
+[data-testid="stExpander"] { margin-top: 4px; }
